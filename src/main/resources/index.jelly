@@ -1,0 +1,6 @@
+<!--
+  This view is used to render the installed plugins page.
+-->
+<div>
+  Show a read-only view of a Computer's environment variables on the Computer's page.
+</div>

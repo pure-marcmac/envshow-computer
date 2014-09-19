@@ -1,0 +1,19 @@
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler"
+	xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson"
+	xmlns:f="/lib/form" xmlns:i="jelly:fmt">
+
+    <div style="width: 100%; float:right">
+        <table style="width: 100%; border: 1px solid black; border-collapse: collapse">
+        <tbody>
+            <tr><th colspan="2" style="font-weight: bold; border: 1px solid black; padding: 3px">Environment Variables</th></tr>
+            <j:forEach var="e" items="${a.environmentVariables}">
+                <tr>
+                    <td style="border: 1px solid black; padding: 5px">${e.key}</td>
+                    <td style="border: 1px solid black; padding: 5px">${e.value}</td>
+                </tr>
+            </j:forEach>
+
+        </tbody>
+        </table>
+    </div>
+</j:jelly>
